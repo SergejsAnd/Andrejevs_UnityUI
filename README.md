@@ -20,12 +20,11 @@ kategorijas (bikses, zābaki, cepures, cimdi, amuleti, u.tml.)
 no kurām ar toggle pogu palīdzību iespējams parādīt 
 un paslēpt attiecīgos elementus. Katra kategorija 
 satur vismaz trīs apģērba gabalus
-- [] Izvēlēto aprīkojumu pēc drag and drop principa ar 
+- [x]Izvēlēto aprīkojumu pēc drag and drop principa ar 
 datorpeles palīdzību ir iespējams pārvietot un nolikt 
 izvēlētajā vietā uz tēla
 - [x] Nodrošināti skaņas efekti 
-(pogu klikšķi, fona mūzika, tēlu izdarītās skaņas)
-- [] tēlu izdarītās skaņas
+(pogu klikšķi, fona mūzika, tēlu izdarītās skaņas, tēlu izdarītās skaņas)
 - [] Ainā ir ievietots scroll view, kurā lasāms 
 apraksts par projektā iekļautajiem tēliem. 
 Nomainot tēlu, attiecīgi nomainās arī tajā esošais tēla apraksts
@@ -34,3 +33,9 @@ tēla garumu, bet otrs platumu
 - [] Projekta izstrādes process tiek jēgpilni versionēts ar Git 
 versiju kontroles sistēmu, GitHub izvietots 
 projektu aprakstošs README fails 
+
+**Komentāri**
+- drag and drop princips strādā, bet apģērba aktivizēšana 
+nav tieši uz apģērba gabala, bet var atrasties citā lauka punktā
+-  tēlam netika pielikta skaņa, jo savādāk katru reizi, kad uzliktu 
+apģērbu tiktu atskaņota skaņa.
