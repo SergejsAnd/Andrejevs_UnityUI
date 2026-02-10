@@ -12,7 +12,7 @@ iespējams ievadīt tēla vārdu un dzimšanas gadu
 pogas (button) nospiešana nodrošina ievadīto vērtību 
 attēlošanu teksta (text) laukā, aprēķinot vecumu 
 (Piemēram: „Supervaronis Oskars ir 25 gadus vecs!”) 
-- []Pielietojot izkrītošo sarakstu (dropdown), 
+- [x]Pielietojot izkrītošo sarakstu (dropdown), 
 iespējams izvēlēties vismaz divus tēlus, 
 kurus iespējams apģērbt
 - []Izveidotas vairākas apģērbu un aprīkojuma 
@@ -23,7 +23,7 @@ satur vismaz trīs apģērba gabalus
 - []Izvēlēto aprīkojumu pēc drag and drop principa ar 
 datorpeles palīdzību ir iespējams pārvietot un nolikt 
 izvēlētajā vietā uz tēla
-- [X]Nodrošināti skaņas efekti 
+- [x]Nodrošināti skaņas efekti 
 (pogu klikšķi, fona mūzika, tēlu izdarītās skaņas)
 - []tēlu izdarītās skaņas
 - []Ainā ir ievietots scroll view, kurā lasāms 
