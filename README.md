@@ -3,7 +3,7 @@ Ieskaites darbs priekšmetā Lietotnes programmēšana
 *Sagatavots viss versionēšanai un izvietošanai GitHub*
 
 **Darāmo darbu saraksts**
-- [] Izstrādāt sākuma ainu no, kuras ir iespējams aizvērt projektu 
+- [x] Izstrādāt sākuma ainu no, kuras ir iespējams aizvērt projektu 
 vai izvēlēties uzsākt tēla veidošanas spēli. 
 Nodrošināta iespēja pārslēgties starp projektā iekļautajām ainām
 - []Pielietojot teksta ievades laukus (2 gab., input field) 
@@ -23,8 +23,9 @@ satur vismaz trīs apģērba gabalus
 - []Izvēlēto aprīkojumu pēc drag and drop principa ar 
 datorpeles palīdzību ir iespējams pārvietot un nolikt 
 izvēlētajā vietā uz tēla
-- []Nodrošināti skaņas efekti 
+- [X]Nodrošināti skaņas efekti 
 (pogu klikšķi, fona mūzika, tēlu izdarītās skaņas)
+- []tēlu izdarītās skaņas
 - []Ainā ir ievietots scroll view, kurā lasāms 
 apraksts par projektā iekļautajiem tēliem. 
 Nomainot tēlu, attiecīgi nomainās arī tajā esošais tēla apraksts
