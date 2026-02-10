@@ -1,40 +1,30 @@
 using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
+using TMPro; // Nepiecieðams TextMeshPro elementiem
+using System; // Nepiecieðams, lai iegûtu paðreizçjo gadu (DateTime)
 
 public class NameScript : MonoBehaviour
 {
-    //izveido mainîgo
-    private string text;
     
-    // izveido masîvu ar tekstu
-    private string[] sampleText = {"Hello", "Have a nice day", "Nive to see you",
-    "Look what's here", "Goodbye"};
-   
-    // izveido mainîgo randomIx
-    int randomIx;
-   
-    // izveido saites uz UI elementiem
-    public GameObject inputField;
-    public GameObject outputField;
-    public GameObject reverseTextToggle;
+    public TMP_InputField inputFieldName;
+    public TMP_InputField inputFieldYear;
+    public TMP_Text outputField;
 
-    // izveido metodi/funkciju, kas tiek izsaukta, nospieþot pogu
-    public void GetText() {
-        randomIx = Random.Range(0, sampleText.Length);
-        text = inputField.GetComponent<TMP_InputField>().text;
-        outputField.GetComponent<TMP_Text>().text = sampleText[randomIx] + " " + text.ToUpper() +"!";
+    public void GetText()
+    {
+        string name = inputFieldName.text;
 
-        // padara toggle interaktîvu
-        reverseTextToggle.GetComponent<Toggle>().interactable = true;
+        string yearString = inputFieldYear.text;
 
-        if(reverseTextToggle.GetComponent<Toggle>().isOn) {
-            ReverseText();
+        if (int.TryParse(yearString, out int birthYear))
+        {
+            int currentYear = DateTime.Now.Year; 
+            int age = currentYear - birthYear;
+
+            outputField.text = "Tçla vârds: " + name.ToUpper() + "\nVecums: " + age + " gadi";
         }
-    }
-    public void ReverseText() {
-        char[] charArray = outputField.GetComponent<TMP_Text>().text.ToCharArray();
-        System.Array.Reverse(charArray);
-        outputField.GetComponent<TMP_Text>().text = new string(charArray);
+        else
+        {
+            outputField.text = "Lûdzu, ievadiet derîgu dzimðanas gadu!";
+        }
     }
 }
